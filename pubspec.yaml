@@ -1,16 +1,24 @@
-name: otp_text_fields
-description: a highly customizable otp text fields
-version: 0.0.1
+name: fancy_otp_text_fields
+description: a highly customizable and fancy otp text fields
+version: 0.0.2
 homepage: https://github.com/mohamad72/otp_text_fields
 
 environment:
   sdk: '>=3.1.0 <4.0.0'
   flutter: ">=1.17.0"
 
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
+
 dependencies:
   flutter:
     sdk: flutter
-  flutter_animator:
+  flutter_animator: ^3.2.2
   collection:
 
 dev_dependencies:
