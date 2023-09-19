@@ -4,17 +4,14 @@ a highly customizable OTP text fields.
 
 
 # Screen Shots
+ | Success Mode                                                                                 | Normal Mode                                                                                  | Customizable                                                                                 | Error Mode                                                                                   |
+|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| ![Screen1](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/screen1.jpg) | ![Screen2](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/screen2.jpg) | ![Screen3](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/screen3.jpg) | ![Screen4](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/screen4.jpg) |
 
-![Screen1](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/screen1.jpg)
-![Screen2](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/screen2.jpg)
-![Screen3](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/screen3.jpg)
-![Screen4](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/screen4.jpg)
+| Loading Mode                                                                               | Customizable Loading Mode                                                                  | normal use                                                                                 |
+|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| ![Video2](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/Video2.gif) | ![Video1](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/Video1.gif) | ![Video4](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/Video4.gif) |
 
-
-![Video1](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/video1.gif)
-![Video2](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/video2.gif)
-![Video4](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/video4.gif)
-![Video5](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/video5.gif)
 ## Code Snippets
 
 simple use:

@@ -1,6 +1,6 @@
 name: fancy_otp_text_fields
 description: a highly customizable and fancy otp text fields
-version: 0.0.5
+version: 0.0.6
 homepage: https://github.com/mohamad72/otp_text_fields
 
 environment:
