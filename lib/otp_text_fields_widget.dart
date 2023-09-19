@@ -124,12 +124,12 @@ class _OtpTextFieldsState extends State<OtpTextFields> {
         color: widget.otpTextFieldsController.currentState.value == OtpState.error
             ? Colors.red
             : widget.otpTextFieldsController.currentState.value == OtpState.success
-                ? Colors.green
-                : widget.otpTextFieldsController.currentState.value == OtpState.loading
-                    ? Colors.grey
-                    : otpBoxState == OtpBoxState.active
-                        ? Theme.of(context).primaryColor
-                        : Colors.grey,
+            ? Colors.green
+            : widget.otpTextFieldsController.currentState.value == OtpState.loading
+            ? Colors.grey
+            : otpBoxState == OtpBoxState.active
+            ? Theme.of(context).primaryColor
+            : Colors.grey,
         width: otpBoxState == OtpBoxState.active ? 3.0 : 1.5,
       ),
       borderRadius: const BorderRadius.all(Radius.circular(12)),
@@ -179,7 +179,7 @@ class _OtpTextFieldsState extends State<OtpTextFields> {
                 mainAxisSize: MainAxisSize.max,
                 children: List.generate(
                   widget.otpLength,
-                  (index) => Expanded(
+                      (index) => Expanded(
                     child: Padding(
                       padding: EdgeInsets.only(left: widget.spacing / 2, right: widget.spacing / 2),
                       child: Pulse(
@@ -200,8 +200,8 @@ class _OtpTextFieldsState extends State<OtpTextFields> {
                               myFocusNode[index].hasFocus
                                   ? OtpBoxState.active
                                   : numbers[index] == null
-                                      ? OtpBoxState.empty
-                                      : OtpBoxState.filled,
+                                  ? OtpBoxState.empty
+                                  : OtpBoxState.filled,
                             ),
                             child: Focus(
                               onFocusChange: (hasFocus) {
@@ -254,8 +254,8 @@ class _OtpTextFieldsState extends State<OtpTextFields> {
                                     myFocusNode[index].hasFocus
                                         ? OtpBoxState.active
                                         : numbers[index] == null
-                                            ? OtpBoxState.empty
-                                            : OtpBoxState.filled,
+                                        ? OtpBoxState.empty
+                                        : OtpBoxState.filled,
                                   ),
                                   maxLines: 1,
                                   minLines: 1,
@@ -281,22 +281,24 @@ class _OtpTextFieldsState extends State<OtpTextFields> {
   }
 
   void fillOtp(String otpValue) async {
+    if (otpValue.length != widget.otpLength) return;
     List<int> digits = otpValue.characters.map((e) => int.parse(e)).toList();
     for (int i = 0; i < min(widget.otpLength, digits.length); i++) {
+      if (numbers[i] == digits[i]) continue;
       numbers[i] = digits[i];
       controllers[i].text = digits[i].toString();
       animatePulseKeys[i].currentState!.forward();
       await Future.delayed(const Duration(milliseconds: 140));
     }
-    String otp = numbers.map((e) => e ?? '').join('');
+    String otp = numbers.join('');
     widget.onChanged!(otp, otp.length == widget.otpLength);
     widget.otpTextFieldsController.otpValue.value = otp;
     await Future.delayed(const Duration(milliseconds: 300));
   }
 
   void onChanged() {
-    String otp = numbers.map((e) => e ?? '').join('');
-    widget.otpTextFieldsController.otpValue.value = otp;
-    if (widget.onChanged != null) widget.onChanged!(otp, otp.length == widget.otpLength);
+    String otp = numbers.map((e) => e ?? 'b').join('');
+    widget.otpTextFieldsController.otpValue.value = numbers.join('');
+    if (widget.onChanged != null) widget.onChanged!(otp, otp.length == widget.otpLength && (!otp.contains('b')));
   }
 }
