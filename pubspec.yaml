@@ -1,7 +1,7 @@
 name: otp_text_fields
 description: a highly customizable otp text fields
 version: 0.0.1
-homepage:
+homepage: https://github.com/mohamad72/otp_text_fields
 
 environment:
   sdk: '>=3.1.0 <4.0.0'
