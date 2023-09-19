@@ -13,7 +13,6 @@ a highly customizable OTP text fields.
 
 ![Video1](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/video1.gif)
 ![Video2](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/video2.gif)
-![Video3](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/video3.gif)
 ![Video4](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/video4.gif)
 ![Video5](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/video5.gif)
 ## Code Snippets
@@ -122,3 +121,10 @@ BoxDecoration(
     ],   
   ),
 ```
+
+when you fill otp with code in here one animate will be shown like that:
+```
+otpTextFieldsController.otpValue.value = otpValue;  
+```
+
+![Video3](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/video3.gif)
