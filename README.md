@@ -11,11 +11,11 @@ a highly customizable OTP text fields.
 ![Screen4](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/screen4.jpg)
 
 
-![Video1](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/video1.mp4)
-![Video2](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/video2.mp4)
-![Video3](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/video3.mp4)
-![Video4](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/video4.mp4)
-![Video5](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/video5.mp4)
+![Video1](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/video1.gif)
+![Video2](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/video2.gif)
+![Video3](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/video3.gif)
+![Video4](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/video4.gif)
+![Video5](https://github.com/mohamad72/otp_text_fields/blob/master/screenShots/video5.gif)
 ## Code Snippets
 
 simple use:
